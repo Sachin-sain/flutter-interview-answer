@@ -1,0 +1,90 @@
+Note1:-Flutter is an Open-Source UI SDK developed by Google. It allows the development of iOS/Android apps and uses Dart as the programming language. 
+Dart is an Open-Source, client-side programming language.
+Note2:-The latest changes made in a software program.
+Note3:-safearea is like a work padding.
+
+					
+      					(1)
+Third-party libraries are limited:
+Requirements of Dart:
+Limited complexity
+
+ This mode enables debugging of apps on a physical device, emulator, or simulator.
+ Profile Mode is designed to analyze performance of your app while testing.
+ Released Mode designed to get your app ready for the Play Store and App Store. It designed to provide faster startups, fast execution, and minimal in size.
+
+
+
+Widgets are high level objects used to describe any part of an application.
+Each element on a screen of the Flutter app is a widget.
+
+
+ In simple words, Stateless widgets cannot change their state during the runtime of the app, which means the widgets cannot be redrawn while the app is in action.(static) 
+ Examples: Icon, IconButton, and Text are examples of stateless widgets.
+ To create a Stateless widget, we have to override the build() method as implemented in the code below.
+  
+ Stateful Widgets are the ones that change its properties during run-time. (dynamic)
+ Examples : Checkbox, Radio Button, Slider, InkWell, Form, and TextField are examples of Stateful widgets.
+ To create a Stateful widget, we have to override the createState() method, which returns the state of the widget. 
+
+
+Android Studio   
+Visual Studio
+Xcode   
+Eclipse 
+Emacs
+ 
+ Google Ads 
+ Alibaba 
+ Tencent 
+ Watermaniac
+
+The container is a basic/common widget in Flutter which will contain other widgets. 
+
+  SQFlite database
+  firebase database  
+
+ This is a specific size box. It does not allow us to set the widget's color or decoration, unlike Container. In this case, we only need to resize the widget that is passed as a child.
+ 
+						(2)
+asyn function are used for the heavy operation and acess the data from database or API.
+
+
+       state<=	 response<=
+  UI===>   bloc===>    data
+     =>event      =>request
+
+Putting a Widget build(BuildContext context) method on State rather than putting a Widget build(BuildContext context, State state) method on StatefulWidget gives developers more flexibility when subclassing StatefulWidget.
+
+
+  unit test. 
+  widget test.
+  integration test.
+
+					(3)
+What is initState and super.initState In Flutter?
+initState() is a method that is called once when the Stateful Widget is inserted in the widget tree. We generally override this method if we need to do some sort of initialization work like registering a listener because, unlike build(), this method is called once.
+
+Uses of initState():
+initState() is a method of class State and it is considered as an important lifecycle method in Flutter. initState() is called the only once and we use it for one-time initializations.
+
+Example:
+
+To initialize data that depends on the specific BuildContext.
+To initialize data that need to execute before build()
+Subscribe to Streams.
+#syntax
+@override
+initState() {
+  super.initState();
+ // Add listeners to this class
+}
+
+
+   Global keys provide access to other objects that are associated with those elements, such as BuildContext.
+ For StatefulWidgets, global keys also provide access to State.
+ Widgets that have global keys reparent their subtrees when they are moved from one location in the tree to another location in the tree.
+
+Lifecycle of Flutter App, is the demonstration of how the app will change its State.
+ 
+					(5)
